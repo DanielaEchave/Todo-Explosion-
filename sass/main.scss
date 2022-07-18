@@ -1,28 +1,36 @@
 //Variables
 $colorFondo: #F5F5F5;
 $colorPrincipal: #30E3CA;
-$colorSecundario: #2F89FC;
+$colorSecundario: #cccccc;
 $colorExtra: #AAAAAA;
 $borderBox: 2px solid #AAAAAA;
 $mobile: 576px;
-$tablet: 768px;
+$tablet: 577px;
 $desktop: 1200px;
 $font-family: 'Antonio', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 @import 'navbar';
 @import 'collage';
 @import 'logosCategorias';
 @import 'mediaQuerie';
 
+// formulario
+.formulario {
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  47px 47px 91px #acacac,
+                -47px -47px 91px #ffffff;
+}
+
 /* maps */
 $paleta-colores: (
-    primario: #16a085,
-    secundario: #eeeeee,
-    terciario: #cccccc,
+    primario: #30E3CA,
+    secundario: #2F89FC,
+    terciario: #F5F5F5,
 );
 @each $nombre, $valor in $paleta-colores {
     .fondo-#{$nombre} {
@@ -31,22 +39,4 @@ $paleta-colores: (
 }
 #categorias {
     background-color: map-get($paleta-colores, secundario);
-}
-// mixin 
-@mixin accordion-body {
-    background-color: #eeeeee;
-    color: black;
-}
-.accordion-body {
-    @include accordion-body;
-}
-.acordeon {
-    @include accordion-body;
-    color: black
-}
-.preg-frecu {
-    @include accordion-body;
-}
-.accordion-icon-active-color {
-    @include accordion-body;
 }

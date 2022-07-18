@@ -10,4 +10,24 @@
     .carousel-item img {
         height: 500px;
     }
+    .buscador .button{
+            display: none;
+            margin: 0;
+    }
+    #logomarca{
+        width: 200px;
+        height: 100px;
+    }
+    .text-categorias {
+        font-size: 15px;
+    }
+}
+@media (min-width: $tablet) {
+    .logomarca{
+        width: 400px;
+        height: auto;
+    }
+    .text-categorias {
+        font-size: 25px;
+    }
 }
