@@ -1,0 +1,13 @@
+@media (max-width: $mobile) {
+    .logoTodoExplosion img {
+        width: auto;
+        height: 100px;
+    }
+    .navbar .container-fluid{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-item img {
+        height: 500px;
+    }
+}

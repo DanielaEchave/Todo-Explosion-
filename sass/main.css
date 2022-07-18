@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.encabezado {
+  background-color: #30E3CA;
+}
+.encabezado div a img {
+  background-color: #30E3CA;
+}
+.encabezado li a:hover {
+  color: white;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #30E3CA;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+div.collage {
+  background-color: #F5F5F5;
+  text-align: justify;
+}
+div.collage img {
+  background: #F5F5F5;
+  transition: background ease-in 0.3s;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+div.collage img:hover {
+  filter: brightness(1.5);
+  transform: scale(0.98);
+}
+
+#categorias {
+  background-color: #F5F5F5;
+}
+#categorias .text-center {
+  background-color: #F5F5F5;
+  color: #2F89FC;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+@media (max-width: 576px) {
+  .logoTodoExplosion img {
+    width: auto;
+    height: 100px;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
+}
+/* maps */
+.fondo-primario {
+  background-color: #16a085;
+}
+
+.fondo-secundario {
+  background-color: #eeeeee;
+}
+
+.fondo-terciario {
+  background-color: #cccccc;
+}
+
+#categorias {
+  background-color: #eeeeee;
+}
+
+.accordion-body {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.acordeon {
+  background-color: #eeeeee;
+  color: black;
+  color: black;
+}
+
+.preg-frecu {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.accordion-icon-active-color {
+  background-color: #eeeeee;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

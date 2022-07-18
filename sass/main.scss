@@ -1,0 +1,52 @@
+//Variables
+$colorFondo: #F5F5F5;
+$colorPrincipal: #30E3CA;
+$colorSecundario: #2F89FC;
+$colorExtra: #AAAAAA;
+$borderBox: 2px solid #AAAAAA;
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1200px;
+$font-family: 'Antonio', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+@import 'navbar';
+@import 'collage';
+@import 'logosCategorias';
+@import 'mediaQuerie';
+
+/* maps */
+$paleta-colores: (
+    primario: #16a085,
+    secundario: #eeeeee,
+    terciario: #cccccc,
+);
+@each $nombre, $valor in $paleta-colores {
+    .fondo-#{$nombre} {
+        background-color: $valor;
+    }
+}
+#categorias {
+    background-color: map-get($paleta-colores, secundario);
+}
+// mixin 
+@mixin accordion-body {
+    background-color: #eeeeee;
+    color: black;
+}
+.accordion-body {
+    @include accordion-body;
+}
+.acordeon {
+    @include accordion-body;
+    color: black
+}
+.preg-frecu {
+    @include accordion-body;
+}
+.accordion-icon-active-color {
+    @include accordion-body;
+}

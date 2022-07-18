@@ -1,0 +1,14 @@
+div.collage {
+    background-color: $colorFondo; 
+    text-align: justify;
+    img {
+        background: $colorFondo;
+        transition: background ease-in .3s;
+        transition: transform .2s;
+        margin: 0 auto;
+        &:hover {
+            filter: brightness(1.5);
+            transform: scale(0.98);
+        }
+    }
+}
