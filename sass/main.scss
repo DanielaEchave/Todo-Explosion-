@@ -25,6 +25,12 @@ $font-family: 'Antonio', sans-serif;
     box-shadow:  47px 47px 91px #acacac,
                 -47px -47px 91px #ffffff;
 }
+//button prg-frec
+button.boton.accordion-button{
+    background-color: $colorExtra;
+    color: black;
+}
+
 
 /* maps */
 $paleta-colores: (
@@ -37,6 +43,9 @@ $paleta-colores: (
         background-color: $valor;
     }
 }
+//map-get
 #categorias {
-    background-color: map-get($paleta-colores, secundario);
+    background-color: map-get($paleta-colores, terciario);
 }
+//mixing
+@mixin flex-row-center{}

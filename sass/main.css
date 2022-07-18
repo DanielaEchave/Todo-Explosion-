@@ -80,7 +80,7 @@ div.collage img:hover {
   background-color: #F5F5F5;
   color: black;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 @media (max-width: 576px) {
@@ -100,18 +100,14 @@ div.collage img:hover {
     margin: 0;
   }
   #logomarca {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: auto;
   }
   .text-categorias {
     font-size: 15px;
   }
 }
-@media (min-width: 577px) {
-  .logomarca {
-    width: 400px;
-    height: auto;
-  }
+@media (min-width: 576px) {
   .text-categorias {
     font-size: 25px;
   }
@@ -120,6 +116,11 @@ div.collage img:hover {
   border-radius: 11px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 47px 47px 91px #acacac, -47px -47px 91px #ffffff;
+}
+
+button.boton.accordion-button {
+  background-color: #AAAAAA;
+  color: black;
 }
 
 /* maps */
@@ -136,5 +137,5 @@ div.collage img:hover {
 }
 
 #categorias {
-  background-color: #2F89FC;
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=main.css.map */

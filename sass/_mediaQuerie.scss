@@ -15,18 +15,15 @@
             margin: 0;
     }
     #logomarca{
-        width: 200px;
-        height: 100px;
+        width: 300px;
+        height: auto;
     }
     .text-categorias {
         font-size: 15px;
     }
+
 }
-@media (min-width: $tablet) {
-    .logomarca{
-        width: 400px;
-        height: auto;
-    }
+@media (min-width: $mobile) {
     .text-categorias {
         font-size: 25px;
     }
