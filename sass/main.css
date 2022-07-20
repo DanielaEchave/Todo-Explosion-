@@ -59,18 +59,62 @@
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
-div.collage {
+div#collage {
   text-align: justify;
 }
-div.collage img {
+div#collage img {
   background: #F5F5F5;
   transition: background ease-in 0.3s;
   transition: transform 0.2s;
   margin: 0 auto;
+  border-radius: 10px;
 }
-div.collage img:hover {
+div#collage img:hover {
   filter: brightness(1.5);
   transform: scale(0.98);
+}
+
+.lightbox-gallery {
+  background-image: linear-gradient(#4A148C, #E53935);
+  background-repeat: no-repeat;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.lightbox-gallery p {
+  color: #fff;
+}
+
+.lightbox-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .lightbox-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+.lightbox-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.lightbox-gallery .intro p {
+  margin-bottom: 0;
+}
+
+.lightbox-gallery .photos {
+  padding-bottom: 20px;
+}
+
+.lightbox-gallery .item {
+  padding-bottom: 30px;
 }
 
 #categorias {
@@ -106,10 +150,16 @@ div.collage img:hover {
   .text-categorias {
     font-size: 15px;
   }
+  #collage-desktop {
+    display: none;
+  }
 }
-@media (min-width: 576px) {
+@media (min-width: 577px) {
   .text-categorias {
     font-size: 25px;
+  }
+  .collage-mobile {
+    display: none;
   }
 }
 .formulario {
@@ -138,4 +188,18 @@ button.boton.accordion-button {
 
 #categorias {
   background-color: #F5F5F5;
+}
+
+.nosotros {
+  background-color: #F5F5F5;
+  color: black;
+  font-family: sans-serif;
+}
+
+.nosotros--titulo {
+  font-size: 30px;
+}
+
+.nosotros--parrafo {
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

@@ -21,10 +21,16 @@
     .text-categorias {
         font-size: 15px;
     }
+    #collage-desktop {
+        display: none;
+    }
 
 }
-@media (min-width: $mobile) {
+@media (min-width: 577px) {
     .text-categorias {
         font-size: 25px;
+    }
+    .collage-mobile {
+        display: none;
     }
 }

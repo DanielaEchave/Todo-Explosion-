@@ -1,11 +1,10 @@
 //Variables
 $colorFondo: #F5F5F5;
 $colorPrincipal: #30E3CA;
-$colorSecundario: #cccccc;
+$colorSecundario: #F5F5F5;
 $colorExtra: #AAAAAA;
 $borderBox: 2px solid #AAAAAA;
 $mobile: 576px;
-$tablet: 577px;
 $desktop: 1200px;
 $font-family: 'Antonio', sans-serif;
 * {
@@ -49,3 +48,16 @@ $paleta-colores: (
 }
 //mixing
 @mixin flex-row-center{}
+
+//extend
+.nosotros {
+    background-color: $colorSecundario;
+    color: black;
+    font-family: sans-serif;
+}
+.nosotros--titulo {
+    font-size: 30px;
+}
+.nosotros--parrafo {
+    font-size: 15px;
+}
