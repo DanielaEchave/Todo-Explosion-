@@ -18,19 +18,23 @@
         width: 300px;
         height: auto;
     }
-    .text-categorias {
-        font-size: 15px;
-    }
     #collage-desktop {
         display: none;
     }
+    #categorias {
+        .text-size {
+            font-size: 15px;
+        }
+    }
 
 }
-@media (min-width: 577px) {
-    .text-categorias {
-        font-size: 25px;
-    }
+@media (min-width: 567px) {
     .collage-mobile {
         display: none;
+    }
+    #categorias {
+        .text-size {
+            font-size: 25px;
+        }
     }
 }

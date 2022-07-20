@@ -124,7 +124,6 @@ div#collage img:hover {
   background-color: #F5F5F5;
   color: black;
   font-family: sans-serif;
-  font-size: 20px;
 }
 
 @media (max-width: 576px) {
@@ -147,19 +146,19 @@ div#collage img:hover {
     width: 300px;
     height: auto;
   }
-  .text-categorias {
-    font-size: 15px;
-  }
   #collage-desktop {
     display: none;
   }
-}
-@media (min-width: 577px) {
-  .text-categorias {
-    font-size: 25px;
+  #categorias .text-size {
+    font-size: 15px;
   }
+}
+@media (min-width: 567px) {
   .collage-mobile {
     display: none;
+  }
+  #categorias .text-size {
+    font-size: 25px;
   }
 }
 .formulario {
